@@ -119,6 +119,14 @@ nav#desktop-nav:hover a
 	z-index: -1;
 }
 
+/*
+CONVERT TO JAVASCRIPT
+.mySlides:hover
+{
+	transition: 10s;
+	transform: scale(1.1);
+}*/
+
 .mySlides
 {
 	height: 100%;
