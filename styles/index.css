@@ -1,0 +1,184 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	/* US_Capitol.jpg - https://hubble25th.org/history/pre-launch */
+	background: rgb(60,117,147);
+	background-size: cover;
+}
+/*
+div#header-blur
+{
+	width: 100vw;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter: blur(5px);
+}*/
+
+header
+{
+	width: 100vw;
+	height: 70px;
+	background-color: rgba(0,0,0,.4);
+}
+
+header div#bpa-logo
+{
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 130%;
+	min-height: 100px;
+	margin-left: 25px;
+	background-color: rgb(157,193,127);
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+header div#bpa-logo img#bpa-logo-src
+{
+	position: absolute;
+	width: 95%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav#mobile-nav
+{
+	display: none;
+}
+
+nav#desktop-nav
+{
+	display: inline-block;
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+nav#desktop-nav a
+{
+	font-family: Verdana;
+	letter-spacing: .5px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 12.5px 15px 10px 15px;
+	border-right: 1px solid black;
+	margin-right: -4px
+
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+nav#desktop-nav a:hover
+{
+	border-radius: 10px;
+	background-color: rgb(0,0,0,.25);
+	border-right: 1px solid rgb(0,0,0,0);
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+nav#desktop-nav:hover a
+{
+	border-right: 1px solid rgb(0,0,0,0);
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+#DC-Slideshow
+{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.mySlides
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* mobile/small screens (portrait) */
+@media (max-width: 790px)
+{
+	nav#desktop-nav
+	{
+		display: none;
+	}
+
+	nav#mobile-nav
+	{
+		display: inline-block;
+		float: right;
+		margin-right: 25px;
+		position: relative;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+
+	nav#mobile-nav a
+	{
+		font-family: Verdana;
+		letter-spacing: .5px;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 12.5px 15px 10px 15px;
+
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
+	}
+
+	nav#mobile-nav a:hover
+	{
+		border-radius: 10px;
+		background-color: rgb(0,0,0,.25);
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+	}
+}
+
+/* mobile/small screens (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+{
+  
+}
