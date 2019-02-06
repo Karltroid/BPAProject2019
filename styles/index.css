@@ -180,7 +180,7 @@ hr
 
 .current-page
 {
-	opacity: .65;
+	opacity: .;
 }
 
 footer
@@ -345,6 +345,7 @@ footer
 		width: 100vw;
 		height: 100vh;
 		background: rgb(60,117,147);
+		overflow: scroll;
 	}
 
 	div#mobile-nav-items nav a
