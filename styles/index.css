@@ -6,16 +6,6 @@ body
 	background: rgb(60,117,147);
 	background-size: cover;
 }
-/*
-div#header-blur
-{
-	width: 100vw;
-	height: 70px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	filter: blur(5px);
-}*/
 
 header
 {
@@ -26,6 +16,7 @@ header
 
 header div#bpa-logo
 {
+	transition: .25s;
 	display: inline-block;
 	position: relative;
 	width: 200px;
@@ -40,6 +31,26 @@ header div#bpa-logo
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+header div#bpa-logo:hover
+{
+	height: 200%;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+header div#bpa-logo:hover img#bpa-logo-src
+{
+	top: 64%;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
 header div#bpa-logo img#bpa-logo-src
 {
 	position: absolute;
@@ -47,6 +58,11 @@ header div#bpa-logo img#bpa-logo-src
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
 nav#mobile-nav
@@ -62,6 +78,11 @@ nav#desktop-nav
 	position: relative;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+div#mobile-nav-items
+{
+	display: none;
 }
 
 nav#desktop-nav a
@@ -142,6 +163,27 @@ CONVERT TO JAVASCRIPT
 		display: none;
 	}
 
+	div#mobile-nav-items header
+	{
+		background: rgba(255,255,255,.5);
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	}
+
+	div#mobile-nav-items header div#mobile-nav-title
+	{
+		display: inline-block;
+		height: 67.5px;
+		line-height: 67.5px;
+		white-space: nowrap;
+		text-transform: uppercase;
+		color: white;
+		margin-left: 25px;
+	}
+
 	nav#mobile-nav
 	{
 		display: inline-block;
@@ -152,36 +194,54 @@ CONVERT TO JAVASCRIPT
 		transform: translate(0, -50%);
 	}
 
-	nav#mobile-nav a
+	nav#mobile-nav img#nav-button
 	{
+		height: 40px;
+		transition: .1s;
+	}
+
+	nav#mobile-nav img#nav-button:hover
+	{
+		transform: scale(1.1);
+		transition: .1s;
+		cursor: pointer;
+	}
+
+	div#mobile-nav-items
+	{
+		display: none;
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgb(60,117,147);
+	}
+
+	div#mobile-nav-items nav a
+	{
+		border-bottom: 3px solid rgba(0,0,0,.75);
 		font-family: Verdana;
 		letter-spacing: .5px;
+		display: block;
 		color: white;
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 12.5px 15px 10px 15px;
-
-		-webkit-transition: all 0.1s ease-in-out;
-		-moz-transition: all 0.1s ease-in-out;
-		-ms-transition: all 0.1s ease-in-out;
-		-o-transition: all 0.1s ease-in-out;
-		transition: all 0.1s ease-in-out;
+		padding: 7vh;
+		text-align: center;
+		font-size: 150%;
+		letter-spacing: .5vw;
 	}
 
-	nav#mobile-nav a:hover
+	div#mobile-nav-items nav a:hover
 	{
-		border-radius: 10px;
-		background-color: rgb(0,0,0,.25);
-		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		-webkit-transition: all 0.25s ease-in-out;
-		-moz-transition: all 0.25s ease-in-out;
-		-ms-transition: all 0.25s ease-in-out;
-		-o-transition: all 0.25s ease-in-out;
-		transition: all 0.25s ease-in-out;
+		background-color: rgba(0,0,0,.25)
+	}
+
+	header div#bpa-logo
+	{
+		margin-left: 15px;
 	}
 }
 

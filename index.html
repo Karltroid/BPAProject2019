@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" type="text/css" href="styles/index.css" />
 		<script src="scripts/slideshow.js"></script>
+		<script src="scripts/mobilenav.js"></script>
 
 		<!-- site title & icon -->
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" />
@@ -21,7 +22,34 @@
 		</title>
 	</head>
 	<body>
-		<header>
+		<div id="mobile-nav-items">
+			<header>
+				<div id="mobile-nav-title">
+					Navigation
+				</div>
+				<nav id="desktop-nav">
+					<a href="">Home</a>
+					<a href="">Maps</a>
+					<a href="">Places</a>
+					<a href="">Transit</a>
+					<a href="">Attire</a>
+					<a href="">NLC</a>
+				</nav>
+				<nav id="mobile-nav">
+					<img onclick="closenav()" id="nav-button" src="images/nav/menu_button_exit.png" />
+				</nav>
+			</header>
+			<nav>
+				<a href="">Home</a>
+				<a href="">Maps</a>
+				<a href="">Places</a>
+				<a href="">Transit</a>
+				<a href="">Attire</a>
+				<a href="">NLC</a>
+			</nav>
+		</div>
+		
+		<header id="mainheader">
 			<a href="http://bpa.org">
 				<div id="bpa-logo">
 					<img id="bpa-logo-src" src="images/index/BPA_Logo_W.png" />
@@ -36,10 +64,10 @@
 				<a style="border-right: 0px;" href="">NLC</a>
 			</nav>
 			<nav id="mobile-nav">
-				<a href="">Mobile Mode</a>
+				<img onclick="opennav()" id="nav-button" src="images/nav/menu_button.png" />
 			</nav>
 		</header>
-		<div id="header-blur"></div>
+		
 		<div id="DC-Slideshow">
 			<img class="mySlides w3-animate-right" src="images/index/US_Capitol.jpg" />
 			<img class="mySlides w3-animate-right" src="images/index/Downtown.jpg" />
