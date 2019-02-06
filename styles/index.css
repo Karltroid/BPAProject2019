@@ -165,7 +165,7 @@ CONVERT TO JAVASCRIPT
 
 	div#mobile-nav-items header
 	{
-		background: rgba(255,255,255,.5);
+		background: rgb(157,193,127);
 		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -182,13 +182,15 @@ CONVERT TO JAVASCRIPT
 		text-transform: uppercase;
 		color: white;
 		margin-left: 25px;
+		font-size: 125%;
+		font-weight: bolder;
 	}
 
 	nav#mobile-nav
 	{
 		display: inline-block;
 		float: right;
-		margin-right: 25px;
+		margin-right: 35px;
 		position: relative;
 		top: 50%;
 		transform: translate(0, -50%);
@@ -196,7 +198,7 @@ CONVERT TO JAVASCRIPT
 
 	nav#mobile-nav img#nav-button
 	{
-		height: 40px;
+		height: 45px;
 		transition: .1s;
 	}
 
@@ -221,7 +223,7 @@ CONVERT TO JAVASCRIPT
 
 	div#mobile-nav-items nav a
 	{
-		border-bottom: 3px solid rgba(0,0,0,.75);
+		/*border-bottom: 3px solid rgba(0,0,0,.75);*/
 		font-family: Verdana;
 		letter-spacing: .5px;
 		display: block;
@@ -232,11 +234,47 @@ CONVERT TO JAVASCRIPT
 		text-align: center;
 		font-size: 150%;
 		letter-spacing: .5vw;
+		background-color: rgba(0,0,0,.25)
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	}
+
+	div#mobile-nav-items nav a#Home
+	{
+		background-color: rgba(255,255,255,.175)
+	}
+	div#mobile-nav-items nav a#Maps
+	{
+		background-color: rgba(255,255,255,.140)
+	}
+	div#mobile-nav-items nav a#Places
+	{
+		background-color: rgba(255,255,255,.105)
+	}
+	div#mobile-nav-items nav a#Transit
+	{
+		background-color: rgba(255,255,255,.070)
+	}
+	div#mobile-nav-items nav a#Attire
+	{
+		background-color: rgba(255,255,255,.035)
+	}
+	div#mobile-nav-items nav a#NLC
+	{
+		background-color: rgba(255,255,255,0)
 	}
 
 	div#mobile-nav-items nav a:hover
 	{
 		background-color: rgba(0,0,0,.25)
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	}
 
 	header div#bpa-logo
