@@ -144,7 +144,6 @@ nav#desktop-nav:hover a
 	overflow: hidden;
 	-webkit-animation: zoomin 8.5s ease-in-out infinite;
 	animation: zoomin 8.5s ease-in-out infinite;
-	transition: all .5s ease-in-out;
 }
 
 .mySlides
@@ -180,7 +179,7 @@ hr
 
 .current-page
 {
-	opacity: .;
+	opacity: .5;
 }
 
 footer
@@ -271,7 +270,7 @@ footer
 /*End of Zoom in Keyframes */
 
 /* mobile/small screens (portrait) */
-@media (max-width: 795px)
+@media (max-width: 800px)
 {
 	.center img
 	{
@@ -389,7 +388,7 @@ footer
 	{
 		background-color: rgba(255,255,255,.035)
 	}
-	div#mobile-nav-items nav a#NLC
+	div#mobile-nav-items nav a#Food
 	{
 		background-color: rgba(255,255,255,0)
 	}
