@@ -78,6 +78,7 @@ nav#desktop-nav
 	position: relative;
 	top: 50%;
 	transform: translate(0, -50%);
+	font-size: 105%;
 }
 
 div#mobile-nav-items
@@ -94,7 +95,7 @@ nav#desktop-nav a
 	text-transform: uppercase;
 	padding: 12.5px 15px 10px 15px;
 	border-right: 1px solid black;
-	margin-right: -4px
+	margin-left: -5px;
 
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
@@ -155,8 +156,13 @@ CONVERT TO JAVASCRIPT
 	object-fit: cover;
 }
 
+.current-page
+{
+	opacity: .5;
+}
+
 /* mobile/small screens (portrait) */
-@media (max-width: 790px)
+@media (max-width: 775px)
 {
 	nav#desktop-nav
 	{
@@ -165,6 +171,8 @@ CONVERT TO JAVASCRIPT
 
 	div#mobile-nav-items header
 	{
+		font-family: Verdana;
+		font-size: 150%;
 		background: rgb(157,193,127);
 		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 		-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -182,7 +190,6 @@ CONVERT TO JAVASCRIPT
 		text-transform: uppercase;
 		color: white;
 		margin-left: 25px;
-		font-size: 125%;
 		font-weight: bolder;
 	}
 
@@ -223,7 +230,6 @@ CONVERT TO JAVASCRIPT
 
 	div#mobile-nav-items nav a
 	{
-		/*border-bottom: 3px solid rgba(0,0,0,.75);*/
 		font-family: Verdana;
 		letter-spacing: .5px;
 		display: block;
@@ -232,7 +238,8 @@ CONVERT TO JAVASCRIPT
 		text-transform: uppercase;
 		padding: 100px;
 		text-align: center;
-		font-size: 150%;
+		font-size: 300%;
+		font-weight: bolder;
 		letter-spacing: .5vw;
 		background-color: rgba(0,0,0,.25)
 		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -280,6 +287,19 @@ CONVERT TO JAVASCRIPT
 	header div#bpa-logo
 	{
 		margin-left: 15px;
+	}
+
+	div#webpage-title
+	{
+		position: fixed;
+		top: 6px;
+		right: 10px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+		font-family: Verdana;
+		text-transform: uppercase;
+		font-weight: bolder;
 	}
 }
 

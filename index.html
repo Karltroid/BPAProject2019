@@ -18,11 +18,29 @@
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" />
 		<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
 		<title>
-			BPA-NLC Washington DC
+			BPANLC D.C.
 		</title>
 	</head>
 	<body>
-		<div id="mobile-nav-items">
+		<header id="mainheader">
+			<a href="http://bpa.org">
+				<div id="bpa-logo">
+					<img id="bpa-logo-src" src="images/index/BPA_Logo_W.png" />
+				</div>
+			</a>
+			<nav id="desktop-nav">
+				<a class="current-page" href="index.html">Home</a>
+				<a href="webpages/maps.html">Maps</a>
+				<a href="webpages/places.html">Places</a>
+				<a href="webpages/transit.html">Transit</a>
+				<a href="webpages/attire.html">Attire</a>
+				<a style="border-right: 0px;" href="webpages/nlc.html">NLC</a>
+			</nav>
+			<nav id="mobile-nav">
+				<div id="webpage-title">Home</div><img onclick="opennav()" id="nav-button" src="images/nav/menu_button.png" />
+			</nav>
+
+			<div id="mobile-nav-items">
 			<header>
 				<div id="mobile-nav-title">
 					Navigation
@@ -32,32 +50,14 @@
 				</nav>
 			</header>
 			<nav>
-				<a id="Home" href="">Home</a>
-				<a id="Maps" href="">Maps</a>
-				<a id="Places" href="">Places</a>
-				<a id="Transit" href="">Transit</a>
-				<a id="Attire" href="">Attire</a>
-				<a id="NLC" href="">NLC</a>
+				<a id="Home" class="current-page" href="index.html">Home</a>
+				<a id="Maps" href="webpages/maps.html">Maps</a>
+				<a id="Places" href="webpages/places.html">Places</a>
+				<a id="Transit" href="webpages/transit.html">Transit</a>
+				<a id="Attire" href="webpages/attire.html">Attire</a>
+				<a id="NLC" href="webpages/nlc.html">NLC</a>
 			</nav>
 		</div>
-		
-		<header id="mainheader">
-			<a href="http://bpa.org">
-				<div id="bpa-logo">
-					<img id="bpa-logo-src" src="images/index/BPA_Logo_W.png" />
-				</div>
-			</a>
-			<nav id="desktop-nav">
-				<a href="">Home</a>
-				<a href="">Maps</a>
-				<a href="">Places</a>
-				<a href="">Transit</a>
-				<a href="">Attire</a>
-				<a style="border-right: 0px;" href="">NLC</a>
-			</nav>
-			<nav id="mobile-nav">
-				<img onclick="opennav()" id="nav-button" src="images/nav/menu_button.png" />
-			</nav>
 		</header>
 		
 		<div id="DC-Slideshow">
