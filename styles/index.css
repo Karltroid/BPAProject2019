@@ -474,27 +474,27 @@ footer
 	}
 	div#mobile-nav-items nav a#Maps
 	{
-		background-color: rgb(89, 134, 158);
+		background-color: rgb(84, 129, 153);
 		z-index: 9;
 	}
 	div#mobile-nav-items nav a#Places
 	{
-		background-color: rgb(79, 124, 148);
+		background-color: rgb(69, 114, 138);
 		z-index: 8;
 	}
 	div#mobile-nav-items nav a#Transit
 	{
-		background-color: rgb(69, 114, 138);
+		background-color: rgb(54, 99, 123);
 		z-index: 7;
 	}
 	div#mobile-nav-items nav a#Attire
 	{
-		background-color: rgb(59, 104, 128);
+		background-color: rgb(39, 84, 108);
 		z-index: 6;
 	}
 	div#mobile-nav-items nav a#Food
 	{
-		background-color: rgb(49, 94, 118);
+		background-color: rgb(24, 69, 93);
 		z-index: 5;
 	}
 
