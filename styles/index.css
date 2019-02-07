@@ -138,20 +138,6 @@ nav#desktop-nav:hover a
 	animation: animateright 0.4s;
 }
 
-@keyframes animateright
-{
-	from
-	{
-		right:-300px;
-		opacity:0;
-	}
-	to
-	{
-		right:0;
-		opacity:1
-	}
-}
-
 #DC-Slideshow
 {
 	width: 100vw;
@@ -356,7 +342,35 @@ footer
 	{
 		transform: translate(0px, -300vh);
 	}
-} 
+}
+
+@-webkit-keyframes animateright
+{
+	from
+	{
+		right:-300px;
+		opacity:0;
+	}
+	to
+	{
+		right:0;
+		opacity:1
+	}
+}
+
+@keyframes animateright
+{
+	from
+	{
+		right:-300px;
+		opacity:0;
+	}
+	to
+	{
+		right:0;
+		opacity:1
+	}
+}
 
 /* mobile/small screens (portrait) */
 @media (max-width: 825px)
@@ -511,7 +525,6 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -524,7 +537,6 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -537,7 +549,6 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -550,7 +561,6 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -563,7 +573,6 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -576,14 +585,22 @@ footer
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
 }
 
 /* mobile/small screens (landscape) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+@media (max-width: 825px) and (max-height: 450px)
 {
-  
+	#welcome
+	{
+		margin-top: 1vh;
+		font-size: 12vh;
+	}
+
+	hr
+	{
+		margin: -10px 0px 10px 0px;
+	}
 }
