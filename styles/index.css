@@ -314,7 +314,7 @@ footer
 {
 	0%
 	{
-		transform: translate(0px, -160vh);
+		transform: translate(0px, -300vh);
 	}
 	100%
 	{
@@ -326,7 +326,7 @@ footer
 {
 	0%
 	{
-		transform: translate(0px, -160vh);
+		transform: translate(0px, -300vh);
 	}
 	100%
 	{
@@ -342,7 +342,7 @@ footer
 	}
 	100%
 	{
-		transform: translate(0px, -160vh);
+		transform: translate(0px, -300vh);
 	}
 }
 
@@ -354,7 +354,7 @@ footer
 	}
 	100%
 	{
-		transform: translate(0px, -160vh);
+		transform: translate(0px, -300vh);
 	}
 } 
 
