@@ -603,4 +603,52 @@ footer
 	{
 		margin: -10px 0px 10px 0px;
 	}
+
+	@-webkit-keyframes slide-in
+	{
+		0%
+		{
+			transform: translate(0px, -400vh);
+		}
+		100%
+		{
+			transform: translate(0px, 0px);
+		}
+	} 
+
+	@keyframes slide-in
+	{
+		0%
+		{
+			transform: translate(0px, -400vh);
+		}
+		100%
+		{
+			transform: translate(0px, 0px);
+		}
+	} 
+
+	@-webkit-keyframes slide-out
+	{
+		0%
+		{
+			transform: translate(0px, 0px);
+		}
+		100%
+		{
+			transform: translate(0px, -400vh);
+		}
+	}
+
+	@keyframes slide-out
+	{
+		0%
+		{
+			transform: translate(0px, 0px);
+		}
+		100%
+		{
+			transform: translate(0px, -400vh);
+		}
+	}
 }
