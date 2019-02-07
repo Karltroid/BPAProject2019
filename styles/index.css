@@ -344,7 +344,8 @@ footer
 		width: 100vw;
 		height: 100vh;
 		background: rgb(60,117,147);
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 
 	div#mobile-nav-items nav a
@@ -408,11 +409,63 @@ footer
 		margin-left: 15px;
 	}
 
-	div#webpage-title
+	div#webpage-title-home
 	{
 		position: fixed;
-		top: 6px;
+		top: 2px;
 		right: 10px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+		font-family: Verdana;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+	div#webpage-title-map
+	{
+		position: fixed;
+		top: 5px;
+		right: 18px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+		font-family: Verdana;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+	div#webpage-title-places
+	{
+		position: fixed;
+		top: 5px;
+		right: -2px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+		font-family: Verdana;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+	div#webpage-title-transit
+	{
+		position: fixed;
+		top: 5px;
+		right: -16px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+		font-family: Verdana;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+	div#webpage-title-attire
+	{
+		position: fixed;
+		top: 5px;
+		right: -5px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
