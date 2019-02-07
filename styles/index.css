@@ -5,7 +5,7 @@ body
 	/* US_Capitol.jpg - https://hubble25th.org/history/pre-launch */
 	background: rgb(60,117,147);
 	background-size: cover;
-
+	font-family: Verdana;
 }
 
 header
@@ -88,7 +88,6 @@ div#mobile-nav-items
 
 nav#desktop-nav a
 {
-	font-family: Verdana;
 	font-weight: bolder;
 	letter-spacing: .5px;
 	font-size: 105%;
@@ -133,6 +132,26 @@ nav#desktop-nav:hover a
 	transition: all 0.1s ease-in-out;
 }
 
+.animate-right
+{
+	position:relative;
+	animation:animateright 0.4s;
+}
+
+@keyframes animateright
+{
+	from
+	{
+		right:-300px;
+		opacity:0;
+	}
+	to
+	{
+		right:0;
+		opacity:1
+	}
+}
+
 #DC-Slideshow
 {
 	width: 100vw;
@@ -152,6 +171,7 @@ nav#desktop-nav:hover a
 	width: 100%;
 	object-fit: cover;
 	overflow-y: hidden;
+	filter: blur(2px);
 }
 
 #welcome
@@ -161,20 +181,31 @@ nav#desktop-nav:hover a
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	background: rgba(0,0,0,.4);
-	padding: 20px 20px 20px 20px;
 	border-radius: 20px;
 	margin-top: -2vw;
 	color: white;
 	font-weight: bolder;
-	font-size: 400%;
+	font-size: 500%;
 	text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+#welcome span#top
+{
+	font-size: 195%;
+	margin-left: -5px;
+}
+
+#welcome span#bot
+{
+	font-size: 112%;
+	font-family: Times New Roman;
 }
 
 hr
 {
 	border-top: white solid 3px;
-	margin: 15px 0px 10px 0px;
+	border-bottom: rgba(0,0,0,.5) solid 2px;
+	margin: -15px 0px 10px 0px;
 }
 
 .current-page
@@ -219,7 +250,6 @@ footer
 	left: 50%;
 	transform: translate(-50%, 0);
 	color: white;
-	font-family: Verdana;
 	width: 90vw;
 	margin-top: 30px;
 	overflow-x: hidden;
@@ -244,7 +274,6 @@ footer
 .center h3
 {
 	text-align: center;
-	font-family: Verdana;
 	font-weight: bolder;
 	color: white;
 	font-size: 220%;
@@ -270,7 +299,7 @@ footer
 /*End of Zoom in Keyframes */
 
 /* mobile/small screens (portrait) */
-@media (max-width: 800px)
+@media (max-width: 825px)
 {
 	.center img
 	{
@@ -279,7 +308,8 @@ footer
 	}
 	#welcome
 	{
-		display: none;
+		font-size: 9vw;
+		margin-top: -100px;
 	}
 
 	nav#desktop-nav
@@ -289,7 +319,7 @@ footer
 
 	div#mobile-nav-items header
 	{
-		font-family: Verdana;
+
 		font-size: 150%;
 		background: rgb(157,193,127);
 		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -324,6 +354,8 @@ footer
 	nav#mobile-nav img#nav-button
 	{
 		height: 45px;
+		position: relative;
+		right: -10px;
 		transition: .1s;
 	}
 
@@ -350,7 +382,7 @@ footer
 
 	div#mobile-nav-items nav a
 	{
-		font-family: Verdana;
+
 		letter-spacing: .5px;
 		display: block;
 		color: white;
@@ -413,11 +445,11 @@ footer
 	{
 		position: fixed;
 		top: 2px;
-		right: 10px;
+		right: 0px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-		font-family: Verdana;
+
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -426,11 +458,11 @@ footer
 	{
 		position: fixed;
 		top: 5px;
-		right: 18px;
+		right: 8px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-		font-family: Verdana;
+
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -439,11 +471,11 @@ footer
 	{
 		position: fixed;
 		top: 5px;
-		right: -2px;
+		right: -15px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-		font-family: Verdana;
+
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -452,11 +484,11 @@ footer
 	{
 		position: fixed;
 		top: 5px;
-		right: -16px;
+		right: -26px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-		font-family: Verdana;
+
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
@@ -465,11 +497,24 @@ footer
 	{
 		position: fixed;
 		top: 5px;
-		right: -5px;
+		right: -15px;
 		transform: translate(-50%, 0);
 		color: white;
 		font-size: 180%;
-		font-family: Verdana;
+
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+	div#webpage-title-food
+	{
+		position: fixed;
+		top: 5px;
+		right: -3px;
+		transform: translate(-50%, 0);
+		color: white;
+		font-size: 180%;
+
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
