@@ -1,6 +1,6 @@
 body
 {
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 	/* US_Capitol.jpg - https://hubble25th.org/history/pre-launch */
 	background: rgb(60,117,147);
@@ -48,7 +48,7 @@ header div#bpa-logo:hover img#bpa-logo-src
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-i-out;
 	transition: all 0.25s ease-in-out;
 }
 
