@@ -278,9 +278,13 @@ footer
 	{
 		transform: scale(1);
 	}
-	100%
+	50%
 	{
 		transform: scale(1.15);
+	}
+	100%
+	{
+		transform: scale(1);
 	}
 }
 
@@ -290,9 +294,13 @@ footer
 	{
 		transform: scale(1);
 	}
-	100%
+	50%
 	{
 		transform: scale(1.15);
+	}
+	100%
+	{
+		transform: scale(1);
 	}
 }
 
@@ -372,6 +380,20 @@ footer
 	}
 }
 
+@media (min-width: 1000px)
+{
+	header div#bpa-logo
+	{
+		transition: .25s;
+		display: inline-block;
+		position: relative;
+		width: 300px;
+		height: 150%;
+		min-height: 100px;
+		margin-left: 25px;
+	}
+}
+
 /* mobile/small screens (portrait) */
 @media (max-width: 825px)
 {
@@ -384,6 +406,7 @@ footer
 	#welcome
 	{
 		font-size: 9.5vw;
+		white-space: nowrap;
 	}
 
 	hr
@@ -597,6 +620,13 @@ footer
 	{
 		margin-top: 1vh;
 		font-size: 12vh;
+	}
+
+	header
+	{
+		width: 100vw;
+		height: 50px;
+		background-color: rgba(0,0,0,.4);
 	}
 
 	hr
