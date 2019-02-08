@@ -147,8 +147,8 @@ nav#desktop-nav:hover a
 	top: 0;
 	z-index: -1;
 	overflow: hidden;
-	-webkit-animation: zoomin 8.5s ease-in-out infinite;
-	animation: zoomin 8.5s ease-in-out infinite;
+	-webkit-animation: zoomin 17s ease-in-out infinite;
+	animation: zoomin 17s ease-in-out infinite;
 }
 
 .mySlides
@@ -600,7 +600,7 @@ footer
 }
 
 /* mobile/small screens (landscape) */
-@media (max-width: 825px) and (max-height: 450px)
+@media (max-height: 450px)
 {
 	#welcome
 	{
