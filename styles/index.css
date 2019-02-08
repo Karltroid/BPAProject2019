@@ -380,20 +380,6 @@ footer
 	}
 }
 
-@media (min-width: 1000px)
-{
-	header div#bpa-logo
-	{
-		transition: .25s;
-		display: inline-block;
-		position: relative;
-		width: 300px;
-		height: 150%;
-		min-height: 100px;
-		margin-left: 25px;
-	}
-}
-
 /* mobile/small screens (portrait) */
 @media (max-width: 825px)
 {
@@ -618,14 +604,14 @@ footer
 {
 	#welcome
 	{
-		margin-top: 1vh;
+		margin-top: 1.5vh;
 		font-size: 12vh;
 	}
 
 	header
 	{
 		width: 100vw;
-		height: 50px;
+		height: 70px;
 		background-color: rgba(0,0,0,.4);
 	}
 
