@@ -229,6 +229,7 @@ footer
 	position: absolute;
 	object-fit: cover;
 	overflow: hidden;
+	margin-bottom: -70px;
 }
 
 .place-card, .place-card-large
@@ -256,6 +257,8 @@ footer
 	column-gap:           1vw;
 	text-align: center;
 	overflow: hidden;
+	word-break: keep-all;
+
 }
 
 #main-content .item
@@ -326,7 +329,7 @@ footer
 {
 	color: rgba(0,0,0,.75);
 	text-align: left;
-	margin: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 12px;
 	font-size: 180%;
 }
 
@@ -338,6 +341,23 @@ footer
 	margin: 0px 0px 0px 10px;
 	font-size: 130%;
 	padding: 0px 5px 5px 5px;
+}
+
+#main-content .item ul
+{
+	font-family: product-sans;
+	color: rgba(0,0,0,.65);
+	text-align: left;
+	margin: 10px 0px 0px 15px;
+	font-size: 130%;
+	padding: 0px 5px 5px 5px;
+}
+
+#main-content .item ul li
+{
+	font-size: 110%;
+	list-style-type: none;
+	margin-bottom: 15px;
 }
 
 #main-content .item a
